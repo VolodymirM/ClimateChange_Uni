@@ -6,11 +6,12 @@ import { PodcastComponent } from './podcast-component/podcast-component';
 import { OtherParagraphs } from './other-paragraphs/other-paragraphs';
 import { TakeActionComponent } from './take-action-component/take-action-component';
 import { LinktreeComponent } from './linktree-component/linktree-component';
+import { About } from './about/about';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, SiteHeader, VideoComponent, PodcastComponent,
-    OtherParagraphs, TakeActionComponent, LinktreeComponent],
+    OtherParagraphs, TakeActionComponent, LinktreeComponent, About],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
