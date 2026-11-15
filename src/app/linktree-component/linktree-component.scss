@@ -1,0 +1,89 @@
+.linktree-section {
+	padding: 72px 0 86px;
+	border-top: 1px solid #d9ddd2;
+}
+
+.linktree-intro {
+	max-width: 760px;
+	margin-bottom: 32px;
+}
+
+.linktree-intro p {
+	margin: 16px 0 0;
+	color: #40564d;
+	line-height: 1.7;
+}
+
+.linktree-groups {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 24px;
+}
+
+.linktree-group {
+	padding: 24px;
+	border: 1px solid #d9ddd2;
+	border-radius: 20px;
+	background: #fff;
+}
+
+.linktree-group h3 {
+	margin: 0 0 16px;
+	color: #19342d;
+	font-size: 19px;
+	font-weight: 600;
+}
+
+.linktree-links {
+	display: grid;
+	gap: 12px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.linktree-links a {
+	display: block;
+	padding: 14px 16px;
+	border: 1px solid #d9ddd2;
+	border-radius: 12px;
+	background: #f5f5ef;
+	color: #19342d;
+	line-height: 1.5;
+	text-decoration: none;
+	transition:
+		border-color 180ms ease,
+		background-color 180ms ease,
+		transform 180ms ease;
+}
+
+.linktree-links a:hover {
+	transform: translateY(-2px);
+	border-color: #71883f;
+	background: #e8edde;
+}
+
+@media (max-width: 700px) {
+	.linktree-section {
+		padding: 52px 0 64px;
+	}
+
+	.linktree-groups {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	.linktree-group {
+		padding: 20px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.linktree-links a {
+		transition: none;
+	}
+
+	.linktree-links a:hover {
+		transform: none;
+	}
+}
