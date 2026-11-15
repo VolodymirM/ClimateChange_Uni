@@ -1,0 +1,31 @@
+.nav-menu {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.nav-menu a {
+	color: #52615b;
+	font-size: 13px;
+	text-decoration: none;
+	transition: color 160ms ease;
+}
+
+.nav-menu a:hover {
+	color: #71883f;
+}
+
+.nav-menu .nav-action {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	padding: 11px 15px;
+	border: 1px solid #cbd2bd;
+	color: #29473a;
+	font-weight: 700;
+}
+
+.nav-menu .nav-action span {
+	color: #71883f;
+	font-size: 17px;
+}

@@ -1,0 +1,51 @@
+.site-header {
+	position: sticky;
+	z-index: 10;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 76px;
+	padding: 0 max(56px, calc((100vw - 1208px) / 2));
+	border-bottom: 1px solid #e0e2d9;
+	background: #f5f5ef;
+}
+
+@media (max-width: 900px) {
+	.site-header {
+		padding: 0 32px;
+	}
+
+	.nav-menu {
+		gap: 20px;
+	}
+}
+
+@media (max-width: 580px) {
+	.site-header {
+		min-height: 68px;
+		padding: 0 18px;
+	}
+
+	.brand-name {
+		font-size: 9px;
+		letter-spacing: 0.8px;
+	}
+
+	.nav-menu {
+		gap: 14px;
+	}
+
+	.nav-menu a {
+		font-size: 11px;
+	}
+
+	.nav-menu a:first-child {
+		display: none;
+	}
+
+	.nav-menu .nav-action {
+		gap: 5px;
+		padding: 9px 8px;
+	}
+}
