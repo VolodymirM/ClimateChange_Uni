@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 84px;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	background: #f5f5ef;
+	color: #19342d;
+	font-family: 'Aptos', 'Segoe UI', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+a:focus-visible {
+	outline: 2px solid #71883f;
+	outline-offset: 4px;
+}
+
+h1,
+h2 {
+	margin: 0;
+	font-family: Georgia, 'Times New Roman', serif;
+	font-weight: 400;
+	letter-spacing: 0;
+}
+
+h1 {
+	max-width: 570px;
+	font-size: 66px;
+	line-height: 0.99;
+}
+
+h1 span {
+	display: block;
+	color: #6c853e;
+	font-style: italic;
+}
+
+h2 {
+	max-width: 470px;
+	font-size: 38px;
+	line-height: 1.1;
+}
