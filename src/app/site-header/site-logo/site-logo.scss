@@ -28,3 +28,14 @@
 	color: #71883f;
 	font-weight: 700;
 }
+
+@media (max-width: 580px) {
+	.brand {
+		gap: 8px;
+	}
+
+	.brand-name {
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+}

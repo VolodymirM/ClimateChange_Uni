@@ -1,9 +1,22 @@
-<nav class="nav-menu" aria-label="Main navigation">
-    <a href="#science">Climate Science</a>
-    <a href="#consensus">Scientific Consensus</a>
-    <a href="#coast">Coastal Threats</a>
-    <a href="#biodiversity">Biodiversity Loss</a>
-	<a class="nav-action" href="#actions">Take action <span aria-hidden="true">&#8599;</span></a>
-    <a href="#links">Links</a>
-    <a href="#about">About</a>
+<button
+    class="nav-toggle"
+    type="button"
+    aria-controls="main-navigation"
+    [attr.aria-expanded]="isOpen"
+    (click)="toggleMenu()">
+    <span class="nav-toggle-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+    </span>
+    <span>Menu</span>
+</button>
+<nav id="main-navigation" class="nav-menu" [class.is-open]="isOpen" aria-label="Main navigation">
+    <a href="#science" (click)="closeMenu()">Climate Science</a>
+    <a href="#consensus" (click)="closeMenu()">Scientific Consensus</a>
+    <a href="#coast" (click)="closeMenu()">Coastal Threats</a>
+    <a href="#biodiversity" (click)="closeMenu()">Biodiversity Loss</a>
+    <a class="nav-action" href="#actions" (click)="closeMenu()">Take action <span aria-hidden="true">&#8599;</span></a>
+    <a href="#links" (click)="closeMenu()">Links</a>
+    <a href="#about" (click)="closeMenu()">About</a>
 </nav>

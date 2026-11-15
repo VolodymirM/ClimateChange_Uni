@@ -5,4 +5,14 @@ import { Component } from '@angular/core';
   styleUrl: './nav-menu.scss',
   templateUrl: './nav-menu.html',
 })
-export class NavMenu {}
+export class NavMenu {
+  isOpen = false;
+
+  toggleMenu(): void {
+    this.isOpen = !this.isOpen;
+  }
+
+  closeMenu(): void {
+    this.isOpen = false;
+  }
+}
