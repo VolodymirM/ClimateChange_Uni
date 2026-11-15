@@ -1,0 +1,26 @@
+.video-section {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	align-items: center;
+	gap: clamp(24px, 5vw, 56px);
+	padding: 72px 0;
+}
+
+.video-intro,
+.video-wrapper {
+	min-width: 0;
+}
+
+.video-wrapper video {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 900px) {
+	.video-section {
+		grid-template-columns: 1fr;
+		gap: 28px;
+		padding: 56px 0;
+	}
+}

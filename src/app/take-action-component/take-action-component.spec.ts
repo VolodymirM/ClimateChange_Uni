@@ -18,4 +18,14 @@ describe('TakeActionComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('renders all four action recommendations', () => {
+    const actions = fixture.nativeElement.querySelectorAll('.actions-list li');
+
+    expect(actions.length).toBe(4);
+    expect(actions[0].textContent).toContain('Every kilowatt saved directly reduces our reliance');
+    expect(actions[1].textContent).toContain('improve urban air quality');
+    expect(actions[2].textContent).toContain('the destruction of urban green spaces');
+    expect(actions[3].textContent).toContain('climate-conscious policies in your local government');
+  });
 });
